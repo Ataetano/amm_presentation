@@ -1,0 +1,278 @@
+\version "2.24" 
+color = #(define-music-function (parser location color) (string?) #{
+        \once \override NoteHead #'color = #(x11-color color)
+        \once \override Stem #'color = #(x11-color color)
+        \once \override Rest #'color = #(x11-color color)
+        \once \override Beam #'color = #(x11-color color)
+     #})
+    
+\header { 
+ title = "BTS New"   
+  
+  } 
+ 
+\score  { 
+ 
+      << \new Staff  = yyazxfwcfaxxy { \clef "treble" 
+             \time 4/4
+             r 2..  
+             r 8  
+             \bar "|"  %{ end measure 1 %} 
+             gis' 8  
+             gis' 8  
+             gis' 8  
+             gis' 8  
+             fis' 8  
+             fis' 8  
+             e' 8  
+             e' 16  
+             e' 16  
+             \bar "|"  %{ end measure 2 %} 
+             e' 16  
+             e' 16  
+             e' 16  
+             cis'' 2  
+             r 16  
+             b' 8  
+             r 8  
+             \bar "|"  %{ end measure 3 %} 
+             a' 8  
+             b' 8  
+             gis' 8  
+             b' 8  
+             b' 8  
+             fis' 8  
+             b' 8  
+             b' 16  
+             b' 16  
+             \bar "|"  %{ end measure 4 %} 
+             b 16  
+             cis' 16  
+             cis' 8  
+             e' 2.  
+             \bar "|"  %{ end measure 5 %} 
+             fis' 16  
+             fis' 8  
+             e' 8  
+             cis' 8  
+             b 8  
+             b' 8  
+             b' 8  
+             b' 8  
+             b' 16  
+             \bar "|"  %{ end measure 6 %} 
+             b' 16  
+             b' 8  
+             r 8  
+             r 8  
+             e' 8  
+             e' 8  
+             fis' 16  
+             r 16  
+             r 16  
+             r 8  
+             \bar "|"  %{ end measure 7 %} 
+             b' 8  
+             r 8  
+             a' 8  
+             r 8  
+             gis' 8  
+             gis' 8  
+             fis' 8  
+             fis' 16  
+             e' 16  
+             \bar "|"  %{ end measure 8 %} 
+             e' 16  
+             r 16  
+             e' 8  
+             b 8  
+             e' 8  
+             r 8  
+             r 8  
+             r 4  
+             \bar "|"  %{ end measure 9 %} 
+             r 2  
+             r 2  
+             \bar "|"  %{ end measure 10 %} 
+             r 4.  
+             r 2  
+             r 8  
+             \bar "|."  %{ end measure 11 %} 
+              } 
+            
+ 
+       \new Staff  = yyazxfwcffbea { \clef "treble" 
+             \time 4/4
+             < fis  fis'  a'  > 1   
+             \bar "|"  %{ end measure 1 %} 
+             < fis  fis'  a'  > 4.   
+             < b,  b  fis'  > 2   
+             < b,  b  fis'  > 8   
+             \bar "|"  %{ end measure 2 %} 
+             < b,  b  fis'  > 4.   
+             < b,  b  fis'  > 2  ~   
+             < b,  b  fis'  > 8   
+             \bar "|"  %{ end measure 3 %} 
+             < e  e'  gis'  > 4.   
+             < cis  cis'  e'  > 2   
+             < fis  fis'  a'  > 8   
+             \bar "|"  %{ end measure 4 %} 
+             < b,  b  fis'  > 4.   
+             < b,  b  fis'  > 2  ~   
+             < b,  b  fis'  > 8   
+             \bar "|"  %{ end measure 5 %} 
+             < e  e'  gis'  > 4.   
+             < cis  cis'  e'  > 2   
+             < fis  fis'  a'  > 8   
+             \bar "|"  %{ end measure 6 %} 
+             < b,  b  fis'  > 4.   
+             < b,  b  fis'  > 2  ~   
+             < b,  b  fis'  > 8   
+             \bar "|"  %{ end measure 7 %} 
+             < e  e'  gis'  > 4.   
+             r 2  
+             r 8  
+             \bar "|"  %{ end measure 8 %} 
+             r 4.  
+             r 2  
+             r 8  
+             \bar "|"  %{ end measure 9 %} 
+             r 2  
+             r 2  
+             \bar "|"  %{ end measure 10 %} 
+             r 4.  
+             r 2  
+             r 8  
+             \bar "|."  %{ end measure 11 %} 
+              } 
+            
+ 
+       \new Staff  = yyazxfwzbyfdc { \clef "bass" 
+             \time 4/4
+             r 1  
+             \bar "|"  %{ end measure 1 %} 
+             r 8.  
+             fis, 16  
+             fis, 16  
+             b,, 16  
+             b,, 4  
+             r 16  
+             r 8  
+             b,, 16  
+             r 16  
+             fis, 16  
+             \bar "|"  %{ end measure 2 %} 
+             e, 8  
+             e, 8  
+             r 16  
+             e, 16  
+             e, 8  
+             r 8  
+             cis, 8  
+             r 16  
+             cis, 16  
+             cis, 8  
+             \bar "|"  %{ end measure 3 %} 
+             cis, 8.  
+             r 16  
+             r 16  
+             cis, 16  
+             r 4  
+             e, 16  
+             r 8  
+             b,, 16  
+             b,, 16  
+             r 16  
+             \bar "|"  %{ end measure 4 %} 
+             b, 8  
+             b, 8  
+             r 16  
+             b,, 16  
+             r 8  
+             e, 8  
+             r 8  
+             cis, 16  
+             r 16  
+             cis, 8  
+             \bar "|"  %{ end measure 5 %} 
+             cis, 8.  
+             cis, 16  
+             e, 16  
+             r 16  
+             fis, 4  
+             r 16  
+             cis, 8  
+             r 16  
+             r 16  
+             b,, 16  
+             \bar "|"  %{ end measure 6 %} 
+             r 8  
+             b, 8  
+             e, 16  
+             e, 16  
+             r 8  
+             e, 8  
+             e, 8  
+             r 16  
+             r 16  
+             cis, 8  
+             \bar "|"  %{ end measure 7 %} 
+             cis,, 8  
+             fis, 4  
+             r 8  
+             b,, 8  
+             b,, 4.  
+             \bar "|"  %{ end measure 8 %} 
+             r 8  
+             e, 8  
+             r 8  
+             e, 4.  
+             e, 16  
+             r 16  
+             r 16  
+             r 16  
+             \bar "|"  %{ end measure 9 %} 
+             r 2  
+             r 2  
+             \bar "|"  %{ end measure 10 %} 
+             r 4.  
+             r 2  
+             r 8  
+             \bar "|."  %{ end measure 11 %} 
+              } 
+            
+ 
+       \new Staff  = yyazxfywfaeew { \clef "treble" 
+             \time 4/4
+             <  > 1   
+             \bar "|"  %{ end measure 1 %} 
+             \bar "|"  %{ end measure 2 %} 
+             \bar "|"  %{ end measure 3 %} 
+             \bar "|"  %{ end measure 4 %} 
+             \bar "|"  %{ end measure 5 %} 
+             \bar "|"  %{ end measure 6 %} 
+             \bar "|"  %{ end measure 7 %} 
+             <  > 8   
+             \bar "|"  %{ end measure 8 %} 
+             \bar "|"  %{ end measure 9 %} 
+             <  > 8   
+             <  > 8   
+             \bar "|"  %{ end measure 10 %} 
+             <  > 8   
+             <  > 8   
+             \bar "|."  %{ end measure 11 %} 
+              } 
+            
+ 
+        >>
+      
+  } 
+ 
+\paper { }
+\layout {
+  \context {
+    \RemoveEmptyStaffContext
+    \override VerticalAxisGroup #'remove-first = ##t
+  }
+ }
+ 

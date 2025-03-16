@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{amsmath} % For advanced math features
+\usepackage{amssymb} % For extra math symbols
+\usepackage{extarrows} % For extended arrows like \xlongrightarrow
+
+\newcommand{\xdownarrow}[1]{%
+  {\left\Downarrow\vbox to #1{}\right.\kern-\nulldelimiterspace}
+}
+
+\begin{document}
+
+\begin{align*}
+\begin{array}{c@{\hspace{2cm}}c@{\hspace{2cm}}c}
+\hspace{0.3cm} \text{Music Note} \hspace{1.7cm} \text{Music Note}^\prime \hspace{1.45cm} \text{\(x(t) \; ; \; x(0) = x_0\)} \\
+\\
+\begin{bmatrix}
+D4 \\ 
+E2 \\ 
+D4 \\
+\vdots
+\end{bmatrix}
+\overset{\text{Expanded Rhythm}}{\xlongrightarrow{\hspace{2cm}}}
+\begin{bmatrix}
+D4 \\ 
+D4 \\ 
+E2 \\
+E2 \\
+D4 \\
+D4 \\
+\vdots
+\end{bmatrix}
+\overset{T}{\xlongrightarrow{\hspace{2cm}}} 
+\begin{bmatrix}
+1.00 \\ 
+1.27 \\ 
+2.13 \\
+\vdots
+\end{bmatrix}\\
+\\
+\\
+\hspace{0.6cm} \text{Music Note}^* \hspace{0.75cm} \text{\(x(t) \; ; \; x(0) = x^*_0 \neq x_0\)} \\
+\\
+\begin{bmatrix}
+E2 \\ 
+F4 \\
+C3  \\
+\vdots
+\end{bmatrix}
+\overset{T^{-1}}{\xlongleftarrow{\hspace{2cm}}}
+\begin{bmatrix}
+1.05 \\ 
+1.15 \\
+2.20  \\
+\vdots
+\end{bmatrix} \\ \\
+x^\prime(t) = f(x(t)) \; ; \; x(0) = x_0
+\end{array}
+\end{align*}
+
+\end{document}
+

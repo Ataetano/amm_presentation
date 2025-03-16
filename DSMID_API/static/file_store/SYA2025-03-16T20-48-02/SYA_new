@@ -1,0 +1,489 @@
+\version "2.24" 
+color = #(define-music-function (parser location color) (string?) #{
+        \once \override NoteHead #'color = #(x11-color color)
+        \once \override Stem #'color = #(x11-color color)
+        \once \override Rest #'color = #(x11-color color)
+        \once \override Beam #'color = #(x11-color color)
+     #})
+    
+\header { 
+ title = "SYA New"   
+  
+  } 
+ 
+\score  { 
+ 
+      << \new Staff  = xfczwxwyccxfy { \clef "bass" 
+             \key c \major 
+             \time 4/4
+             f' 4  
+             r 2.  
+             \bar "|"  %{ end measure 1 %} 
+             
+               << \new Voice { ais 4.  
+                      < g,  g  ais  dis'  g'  ais'  > 4.   
+                       } 
+                     
+ 
+                \new Voice { r 2  
+                      r 8  
+                      r 8  
+                      ais 4..  
+                      < ais,  f  ais  d'  > 16   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 2 %} 
+             
+               << \new Voice { < ais  d'  f'  > 4.   
+                      < f  a  c'  > 16   
+                       } 
+                     
+ 
+                \new Voice { d' 4.  
+                      < g,,  g,  g  ais  dis'  g'  ais'  > 16   
+                      r 16  
+                      c' 16  
+                      r 16  
+                      < ais,,  ais,  f  ais  d'  f'  > 16   
+                      f' 2  ~  
+                      f' 8  
+                      r 8  
+                      c' 4.  
+                       } 
+                     
+ 
+                \new Voice { r 4  
+                      c' 4  
+                      r 8  
+                      d' 16  
+                      < g,  g  ais  dis'  g'  ais'  > 16   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 3 %} 
+             
+               << \new Voice { r 4.  
+                      r 16  
+                       } 
+                     
+ 
+                \new Voice { f,, 16  
+                      f' 16  
+                      g' 16  
+                      < ais,,  ais,  f  ais  d'  f'  > 16   
+                      r 16  
+                      < g,,  g,  g  ais  dis'  g'  ais'  > 2  ~   
+                      < g,,  g,  g  ais  dis'  g'  ais'  > 8   
+                      r 16  
+                      r 16  
+                      r 8  
+                      < ais,,,  ais,,  ais,  > 16   
+                      < ais,,  ais,  f  ais  d'  f'  > 16   
+                      r 8  
+                      ais' 16  
+                      <  > 16   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 4 %} 
+             
+               << \new Voice { < ais,,,  ais,,  ais,  > 4.   
+                      <  > 16   
+                       } 
+                     
+ 
+                \new Voice { r 4.  
+                      r 16  
+                      < ais,,,  ais,,  ais,  > 8   
+                      <  > 16   
+                      r 16  
+                      < dis  g  ais  > 2  ~   
+                      < dis  g  ais  > 8   
+                      d' 2  
+                       } 
+                     
+ 
+                \new Voice { r 8  
+                      <  > 4   
+                      <  > 16   
+                      < g,,  g,  g  ais  dis'  g'  ais'  > 16   
+                      <  > 8   
+                      d' 16  
+                      < ais,,  ais,  f  ais  d'  f'  > 16   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 5 %} 
+             
+               << \new Voice { d' 4.  
+                      < d'  > 4   
+                       } 
+                     
+ 
+                \new Voice { r 8  
+                      <  > 2   
+                      <  > 8   
+                      <  > 8   
+                      r 4..  
+                      < g  ais  > 16   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 6 %} 
+             
+               << \new Voice { < ais,,,  ais,,  ais,  > 4.   
+                      r 16  
+                      ais 16  
+                       } 
+                     
+ 
+                \new Voice { < ais,,,  ais,,  ais,  > 16   
+                      < f,,  f,  f  a  c'  > 16   
+                      g 16  
+                      <  > 16   
+                      <  > 4.   
+                      r 8  
+                      <  > 4   
+                      < f,,,  f,,  f,  > 4   
+                      c'' 8  
+                      < ais,,,  ais,,  ais,  > 16   
+                      <  > 16   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 7 %} 
+             
+               << \new Voice { r 4.  
+                      <  > 16   
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      r 16  
+                      <  > 16   
+                      g 8  
+                      ais' 2  ~  
+                      ais' 8  
+                      r 16  
+                      d' 16  
+                      r 8  
+                      < ais,,,  ais,,  ais,  > 16   
+                      <  > 16   
+                      < f,,,  f,,  f,  ais  d'  > 8   
+                      < g  ais  > 16   
+                      r 16  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 8 %} 
+             
+               << \new Voice { r 4.  
+                      r 8  
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      <  > 16   
+                      r 16  
+                      <  > 16   
+                      r 2  
+                      r 8  
+                      r 8  
+                      <  > 4   
+                      ais' 8  
+                      <  > 16   
+                      <  > 16   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 9 %} 
+             
+               << \new Voice { r 4.  
+                      f' 16  
+                       } 
+                     
+ 
+                \new Voice { d' 16  
+                      r 16  
+                      r 16  
+                      r 16  
+                      <  > 16   
+                      r 2  
+                      r 8  
+                      r 8  
+                      < ais  d'  f'  > 2   
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 10 %} 
+             
+               << \new Voice { <  > 2   
+                      c' 1  
+                      d' 8.  
+                      < ais  d'  f'  > 16   
+                      r 1  
+                      < ais  d'  f'  > 4.   
+                       } 
+                     
+ 
+                \new Voice { < ais,,,  ais,,  ais,  > 4.   
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      r 16  
+                      c' 16  
+                      c' 16  
+                      r 8.  
+                      r 16  
+                      <  > 16   
+                       } 
+                     
+ 
+                \new Voice { ais 16  
+                      <  > 8.   
+                      < ais,,  ais,  f  ais  d'  f'  > 8   
+                      < f  ais  > 4..   
+                      ais' 16  
+                      <  > 16   
+                      < ais  d'  f'  > 2  ~   
+                      < ais  d'  f'  > 16   
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                       } 
+                     
+ 
+                \new Voice { r 4  
+                      r 16  
+                      r 16  
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      r 4  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 11 %} 
+             
+               << \new Voice { r 16  
+                      < ais,,,  ais,,  ais,  > 32   
+                      <  > 16   
+                      <  > 8.   
+                      r 16  
+                      ais' 32  
+                      < f  ais  > 8.   
+                       } 
+                     
+ 
+                \new Voice { < ais  d'  f'  > 16   
+                      ais 8.  
+                      r 16  
+                      <  > 16   
+                      r 16  
+                       } 
+                     
+ 
+                \new Voice { c' 16  
+                      r 16  
+                      bes 4  
+                      r 32  
+                      < bes  d'  f'  > 2  ~   
+                      < bes  d'  f'  > 16   
+                       } 
+                     
+ 
+                \new Voice { < ees  g  bes  > 4..   
+                      r 16  
+                      r 4..  
+                       } 
+                     
+ 
+                \new Voice { r 4.  
+                      d' 4..  
+                      r 8.  
+                       } 
+                     
+ 
+                 >>
+               
+             < bes  f  > 1   
+             \bar "|"  %{ end measure 12 %} 
+             
+               << \new Voice { < bes,,  bes,,,  bes,,  bes,,,  bes,  > 2   
+                      r 16  
+                      < bes,,  bes,,,  bes,,  bes,,,  bes,  > 8.   
+                      < bes,,  bes,,,  bes,,  bes,,,  bes,  > 4   
+                      r 32  
+                      < f,,,  f,,  f,,  f,,,  f,  > 8.   
+                       } 
+                     
+ 
+                \new Voice { bes 16  
+                      d' 4  
+                      r 32  
+                      bes 16  
+                      f' 8  
+                      r 16  
+                       } 
+                     
+ 
+                \new Voice { < bes  f  > 1  ~   
+                       } 
+                     
+ 
+                \new Voice { < bes  bes  > 4   
+                      r 32  
+                      bes 8  
+                      d' 4..  
+                      r 16  
+                      g 16  ~  
+                       } 
+                     
+ 
+                \new Voice { < bes  d'  f'  > 1   
+                       } 
+                     
+ 
+                \new Voice { r 2  
+                      r 4  
+                      r 16  
+                      < d'  bes  > 8   
+                      r 16  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 13 %} 
+             
+               << \new Voice { < ees,,,  ees,,  ees,,  ees,,,  d'  ees,  > 4  ~   
+                      < ees,,,  ees,,  ees,,  ees,,,  d'  ees,  > 16   
+                      < bes,,,  bes,,  bes,,  bes,,,  bes,  > 8.   
+                      < bes,,,  bes,,  bes,,  bes,,,  bes,  > 4   
+                      r 32  
+                      < f,,  f,,,  f,,  f,,,  d'  f,  bes  > 16   
+                       } 
+                     
+ 
+                \new Voice { bes 16  
+                      bes 8  
+                      < bes  g  > 16   
+                      r 16  
+                      bes 16  
+                      r 16  
+                      r 16  
+                       } 
+                     
+ 
+                \new Voice { bes 8  
+                      r 8  
+                      r 16  
+                      d' 4..  
+                      r 8.  
+                       } 
+                     
+ 
+                \new Voice { < ees'  g'  bes'  > 2   
+                      < f'  d'  bes  > 2   
+                       } 
+                     
+ 
+                 >>
+               
+             < bes  f  > 1   
+             g 32  
+             \bar "|"  %{ end measure 14 %} 
+             
+               << \new Voice { < bes,,,  bes,,  bes,,,  bes,,  bes,  > 2   
+                      r 16  
+                      < bes,,,  bes,,  bes,,,  bes,,  bes,  > 8.   
+                      < bes,,,  bes,,  bes,,,  bes,,  bes,  > 4   
+                      r 32  
+                      < f,,,  f,,  f,,,  f,,  f,  > 8.   
+                       } 
+                     
+ 
+                \new Voice { < bes  f  > 1  ~   
+                       } 
+                     
+ 
+                \new Voice { d' 8.  
+                      < bes  c'  > 16   
+                      r 16  
+                      c' 16  
+                      < f'  f'  > 16   
+                       } 
+                     
+ 
+                \new Voice { bes 16  
+                      r 16  
+                      d' 8.  
+                      r 16  
+                      d' 4  
+                      r 4  
+                      < d'  d'  > 16   
+                      r 16  
+                       } 
+                     
+ 
+                \new Voice { < bes  d'  f'  > 1   
+                       } 
+                     
+ 
+                \new Voice { r 4.  
+                      d' 4..  
+                      r 8.  
+                       } 
+                     
+ 
+                \new Voice { r 2  
+                      r 8  
+                      r 4  
+                      r 16  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 15 %} 
+             < bes  f  > 1   
+             \bar "|."  %{ end measure 16 %} 
+              } 
+            
+ 
+        >>
+      
+  } 
+ 
+\paper { }
+\layout {
+  \context {
+    \RemoveEmptyStaffContext
+    \override VerticalAxisGroup #'remove-first = ##t
+  }
+ }
+ 

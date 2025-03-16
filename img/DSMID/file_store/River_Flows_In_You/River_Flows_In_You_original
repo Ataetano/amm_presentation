@@ -1,0 +1,1554 @@
+\version "2.24" 
+color = #(define-music-function (parser location color) (string?) #{
+        \once \override NoteHead #'color = #(x11-color color)
+        \once \override Stem #'color = #(x11-color color)
+        \once \override Rest #'color = #(x11-color color)
+        \once \override Beam #'color = #(x11-color color)
+     #})
+    
+\header { 
+ title = "River Flows In You"   
+  
+  } 
+ 
+\score  { 
+ 
+      << \new Staff  = xeydeydyzyfye { \clef "treble" 
+             \key a \major 
+             \time 4/4
+             a'' 8  
+             gis'' 8  
+             a'' 8  
+             gis'' 8  
+             a'' 8  
+             e'' 8  
+             a'' 8  
+             d'' 8  ~  
+             \bar "|"  %{ end measure 1 %} 
+             d'' 2  ~  
+             d'' 4  ~  
+             d'' 16  
+             r 16  
+             a' 16  
+             cis'' 16  
+             \bar "|"  %{ end measure 2 %} 
+             a'' 8  
+             gis'' 8  
+             a'' 8  
+             gis'' 8  
+             a'' 8  
+             e'' 8  
+             a'' 8  
+             d'' 8  ~  
+             \bar "|"  %{ end measure 3 %} 
+             d'' 2  ~  
+             d'' 4  ~  
+             d'' 16  
+             r 16  
+             a' 16  
+             cis'' 16  
+             \bar "|"  %{ end measure 4 %} 
+             a'' 8  
+             gis'' 16  
+             a'' 8  
+             a' 16  
+             gis'' 16  
+             a'' 8  
+             a' 16  
+             e'' 16  
+             a'' 8  
+             a' 16  
+             d'' 16  
+             a' 16  
+             \bar "|"  %{ end measure 5 %} 
+             
+               << \new Voice { b' 16  
+                      r 16  
+                      d'' 8  
+                      < a'  e''  > 8   
+                      cis'' 8  
+                      < gis'  b'  > 4.   
+                      a' 16  
+                      gis' 16  
+                       } 
+                     
+ 
+                \new Voice { cis'' 8  
+                      r 2..  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 6 %} 
+             < e'  a'  > 4  ~   
+             < e'  a'  > 16   
+             e' 16  
+             a' 16  
+             b' 16  
+             cis'' 16  
+             e' 16  
+             a' 16  
+             b' 16  
+             cis'' 16  
+             e' 16  
+             cis'' 16  
+             d'' 16  
+             \bar "|"  %{ end measure 7 %} 
+             e'' 16  
+             e' 16  
+             cis'' 16  
+             d'' 16  
+             e'' 16  
+             e' 16  
+             d'' 16  
+             cis'' 16  
+             b' 16  
+             e' 16  
+             d'' 16  
+             cis'' 16  
+             b' 8  
+             gis' 8  
+             \bar "|"  %{ end measure 8 %} 
+             
+               << \new Voice { cis'' 16  
+                      r 16  
+                      gis'' 16  
+                      a'' 8  
+                      a' 16  
+                      gis'' 16  
+                      a'' 8  
+                      a' 16  
+                      e'' 16  
+                      a'' 8  
+                      a' 16  
+                      d'' 16  
+                      a' 16  
+                       } 
+                     
+ 
+                \new Voice { a'' 8  
+                      r 2..  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 9 %} 
+             
+               << \new Voice { b' 16  
+                      r 16  
+                      d'' 8  
+                      e'' 8  
+                      cis''' 8  
+                      b'' 8  
+                      e'' 8  
+                      < b''  cis'''  > 16   
+                      b'' 16  
+                      a'' 16  
+                      gis'' 16  
+                       } 
+                     
+ 
+                \new Voice { cis'' 8  
+                      r 2..  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 10 %} 
+             < e''  a''  > 4.   
+             a' 16  
+             b' 16  
+             cis'' 16  
+             e' 16  
+             a' 16  
+             b' 16  
+             cis'' 16  
+             e' 16  
+             cis'' 16  
+             d'' 16  
+             \bar "|"  %{ end measure 11 %} 
+             e'' 16  
+             e' 16  
+             cis'' 16  
+             d'' 16  
+             e'' 16  
+             e' 16  
+             d'' 16  
+             cis'' 16  
+             b' 16  
+             e' 16  
+             gis' 16  
+             b' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 12 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 13 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 14 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 15 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 16 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 17 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 18 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 19 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 8  
+             e'' 8  
+             b' 8  
+             gis' 8  
+             \bar "|"  %{ end measure 20 %} 
+             < a'  cis''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 8  
+             a' 16  
+             gis'' 16  
+             a'' 8  
+             a' 16  
+             e'' 16  
+             a'' 8  
+             a' 16  
+             d'' 16  
+             a' 16  
+             \bar "|"  %{ end measure 21 %} 
+             
+               << \new Voice { b' 16  
+                      r 16  
+                      d'' 8  
+                      < a'  e''  > 8   
+                      cis'' 8  
+                      < gis'  b'  > 4.   
+                      a' 16  
+                      gis' 16  
+                       } 
+                     
+ 
+                \new Voice { cis'' 8  
+                      r 2..  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 22 %} 
+             < e'  a'  > 4  ~   
+             < e'  a'  > 16   
+             e' 16  
+             a' 16  
+             b' 16  
+             cis'' 16  
+             e' 16  
+             a' 16  
+             b' 16  
+             cis'' 16  
+             e' 16  
+             cis'' 16  
+             d'' 16  
+             \bar "|"  %{ end measure 23 %} 
+             e'' 16  
+             e' 16  
+             cis'' 16  
+             d'' 16  
+             e'' 16  
+             e' 16  
+             d'' 16  
+             cis'' 16  
+             b' 16  
+             e' 16  
+             gis' 16  
+             b' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 24 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 25 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 26 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 27 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 8  
+             e'' 8  
+             b' 8  
+             gis' 8  
+             \bar "|"  %{ end measure 28 %} 
+             
+               << \new Voice { < a  cis'  > 8   
+                      r 16  
+                      gis' 8  
+                      a' 8  
+                      gis' 8  
+                      < cis'  e'  > 8   
+                      r 16  
+                      e' 8  
+                      a' 8  
+                      d' 8  
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      a' 16  
+                      r 4..  
+                      a' 16  
+                      r 4.  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 29 %} 
+             cis' 8  
+             d' 8  
+             e' 8  
+             cis' 8  
+             < gis  b  > 4.   
+             a 16  
+             gis 16  
+             \bar "|"  %{ end measure 30 %} 
+             a 4.  
+             a 16  
+             b 16  
+             cis' 8  
+             e 8  
+             a 8  
+             cis' 16  
+             d' 16  
+             \bar "|"  %{ end measure 31 %} 
+             e' 4  
+             a 8  
+             d' 16  
+             cis' 16  
+             b 4.  
+             cis' 8  
+             \bar "|"  %{ end measure 32 %} 
+             
+               << \new Voice { < cis'  e'  > 8   
+                      r 16  
+                      gis' 8  
+                      < cis'  e'  > 8   
+                      r 16  
+                      gis' 8  
+                      < e'  a'  > 8   
+                      e' 8  
+                      a' 8  
+                      d' 8  
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      a' 16  
+                      r 8.  
+                      a' 16  
+                      r 2  
+                      r 8  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 33 %} 
+             cis' 8  
+             d' 8  
+             e' 8  
+             cis'' 8  
+             b' 8  
+             e' 8  
+             < b'  cis''  > 16   
+             b' 16  
+             a' 16  
+             gis' 16  
+             \bar "|"  %{ end measure 34 %} 
+             < e'  a'  > 4.   
+             a 16  
+             b 16  
+             cis' 8  
+             e 8  
+             a 8  
+             cis' 16  
+             d' 16  
+             \bar "|"  %{ end measure 35 %} 
+             e' 8  
+             e 8  
+             a 8  
+             d' 16  
+             cis' 16  
+             b 16  
+             e 16  
+             b' 16  
+             e'' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 36 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 37 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 38 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 39 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 8  
+             b' 8  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 40 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 41 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 42 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 43 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 8  
+             e'' 8  
+             b' 8  
+             gis' 8  
+             \bar "|"  %{ end measure 44 %} 
+             
+               << \new Voice { < cis'  fis'  > 8   
+                      r 16  
+                      a' 8  
+                      a'' 8  
+                      gis'' 8  
+                      gis'' 8  
+                      fis'' 4  
+                      e'' 8  
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      a' 16  
+                      r 2..  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 45 %} 
+             e'' 4  
+             a' 2  
+             a' 8  
+             e'' 8  
+             fis'' 8  
+             \bar "|"  %{ end measure 46 %} 
+             d'' 4  
+             fis' 8  
+             fis' 8  
+             a' 8  
+             d'' 8  
+             cis'' 8  
+             cis'' 8  
+             cis'' 8  
+             b' 8  
+             b' 8  
+             \bar "|"  %{ end measure 47 %} 
+             b' 4  
+             cis'' 4  
+             cis'' 4.  
+             a' 16  
+             gis' 16  
+             \bar "|"  %{ end measure 48 %} 
+             a' 8  
+             cis'' 8  
+             cis'' 8  
+             a'' 8  
+             gis' 8  
+             gis'' 8  
+             gis'' 4.  
+             fis'' 16  
+             e'' 16  
+             \bar "|"  %{ end measure 49 %} 
+             e'' 8  
+             fis'' 8  
+             fis'' 4.  
+             a' 8  
+             e'' 8  
+             d'' 8  
+             cis'' 8  
+             \bar "|"  %{ end measure 50 %} 
+             cis'' 8  
+             d'' 8.  
+             fis' 8  
+             gis' 16  
+             a' 8  
+             gis' 8  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 51 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 52 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 53 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 54 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             b' 16  
+             e'' 16  
+             b' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 55 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 56 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             < b''  cis'''  b''  > 16   
+             a'' 16  
+             gis'' 8  
+             b' 8  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 57 %} 
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 16  
+             a'' 16  
+             a' 16  
+             e'' 16  
+             a' 16  
+             a'' 16  
+             < a''  b''  > 16   
+             a'' 16  
+             gis'' 16  
+             \bar "|"  %{ end measure 58 %} 
+             a'' 16  
+             b'' 16  
+             cis''' 16  
+             d''' 16  
+             e''' 16  
+             cis''' 16  
+             b'' 16  
+             a'' 16  
+             gis'' 8  
+             e'' 8  
+             b' 8  
+             gis' 8  
+             \bar "|"  %{ end measure 59 %} 
+             
+               << \new Voice { < a  cis'  > 8   
+                      r 16  
+                      gis' 8  
+                      a' 8  
+                      gis' 8  
+                      a' 8  
+                      e' 8  
+                      a' 8  
+                      d' 8  
+                       } 
+                     
+ 
+                \new Voice { r 16  
+                      a' 16  
+                      r 2..  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 60 %} 
+             
+               << \new Voice { b 16  
+                      r 16  
+                      d' 8  
+                      e' 8  
+                      cis' 8  
+                      b 4.  
+                      a 16  
+                      gis 16  
+                       } 
+                     
+ 
+                \new Voice { cis' 8  
+                      r 2..  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 61 %} 
+             
+               << \new Voice { a 4  
+                      r 8  
+                      a 8  
+                      cis' 4.  
+                      cis' 16  
+                      d' 16  
+                       } 
+                     
+ 
+                \new Voice { r 4..  
+                      b 16  
+                      r 2  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 62 %} 
+             
+               << \new Voice { e' 4.  
+                      d' 16  
+                      cis' 16  
+                      gis 4.  
+                      r 8  
+                       } 
+                     
+ 
+                \new Voice { r 2  
+                      b 2  
+                       } 
+                     
+ 
+                 >>
+               
+             \bar "|"  %{ end measure 63 %} 
+             r 4  
+             gis' 16  
+             a' 16  
+             cis'' 16  
+             fis'' 16  
+             gis'' 16  
+             a'' 16  
+             cis''' 16  
+             fis''' 16  
+             cis''' 16  
+             fis''' 16  
+             gis''' 16  
+             a''' 16  
+             \bar "|"  %{ end measure 64 %} 
+             gis''' 16  
+             cis''' 16  
+             a'' 16  
+             cis''' 16  
+             gis''' 16  
+             a''' 16  
+             gis''' 16  
+             cis''' 16  
+             r 2  
+             \bar "|."  %{ end measure 65 %} 
+              } 
+            
+ 
+       \new Staff  = xeydeyedfdbzc { \clef "bass" 
+             \key a \major 
+             \time 4/4
+             fis 8  
+             cis' 8  
+             fis' 4  
+             d 8  
+             a 8  
+             e' 4  ~  
+             \bar "|"  %{ end measure 1 %} 
+             e' 2...  
+             r 16  
+             \bar "|"  %{ end measure 2 %} 
+             fis 8  
+             cis' 8  
+             fis' 4  
+             d 8  
+             a 8  
+             e' 4  ~  
+             \bar "|"  %{ end measure 3 %} 
+             e' 2...  
+             r 16  
+             \bar "|"  %{ end measure 4 %} 
+             fis 8  
+             cis' 8  
+             fis' 4  
+             d 8  
+             a 8  
+             e' 8  
+             d 8  
+             \bar "|"  %{ end measure 5 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             e 8  
+             gis 8  
+             b 8  
+             e' 4  
+             \bar "|"  %{ end measure 6 %} 
+             fis 8  
+             cis' 4.  
+             d 8  
+             e' 8.  
+             r 16  
+             e' 8  
+             \bar "|"  %{ end measure 7 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e 8  
+             b 8  
+             e' 4  
+             \bar "|"  %{ end measure 8 %} 
+             fis 8  
+             cis' 8  
+             fis' 8  
+             fis 8  
+             d 8  
+             a 8  
+             e' 8  
+             d 8  
+             \bar "|"  %{ end measure 9 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e 8  
+             b 8  
+             e' 8  
+             e 8  
+             \bar "|"  %{ end measure 10 %} 
+             fis 8  
+             cis' 8  
+             fis' 4  
+             d 8  
+             a 8  
+             e' 16  
+             r 16  
+             d 8  
+             \bar "|"  %{ end measure 11 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 12 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 13 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 14 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 15 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 16 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 17 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 18 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 19 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 4  
+             \bar "|"  %{ end measure 20 %} 
+             fis 8  
+             cis' 8  
+             fis' 4  
+             d 8  
+             a 8  
+             e' 8  
+             d 8  
+             \bar "|"  %{ end measure 21 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             e 8  
+             gis 8  
+             b 8  
+             e' 4  
+             \bar "|"  %{ end measure 22 %} 
+             fis 8  
+             cis' 4.  
+             d 8  
+             e' 8.  
+             r 16  
+             e' 8  
+             \bar "|"  %{ end measure 23 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 24 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 25 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 26 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 27 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 4  
+             \bar "|"  %{ end measure 28 %} 
+             < fis,  cis  > 4   
+             fis 8  
+             fis, 8  
+             d, 4  
+             fis 8  
+             a, 8  
+             \bar "|"  %{ end measure 29 %} 
+             < a,  e  > 4   
+             a 8  
+             a, 8  
+             < e,  e  > 2   
+             \bar "|"  %{ end measure 30 %} 
+             fis, 8  
+             cis 8  
+             fis 4  
+             d, 8  
+             a, 8  
+             e 4  
+             \bar "|"  %{ end measure 31 %} 
+             a, 8  
+             e 8  
+             cis' 8.  
+             r 16  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 32 %} 
+             a, 16  
+             cis 16  
+             fis 16  
+             gis 8  
+             fis 16  
+             cis 8  
+             d, 16  
+             a, 16  
+             d 16  
+             fis 8  
+             a 16  
+             d 8  
+             \bar "|"  %{ end measure 33 %} 
+             a, 16  
+             e 16  
+             a 16  
+             b 16  
+             cis' 16  
+             a 16  
+             e' 8  
+             e, 8  
+             b, 8  
+             gis 4  
+             \bar "|"  %{ end measure 34 %} 
+             fis, 8  
+             cis 8  
+             e 4  
+             d, 8  
+             a, 8  
+             e 4  
+             \bar "|"  %{ end measure 35 %} 
+             a, 2  
+             e, 16  
+             b, 16  
+             e 16  
+             b, 16  
+             e 16  
+             b, 16  
+             gis 16  
+             b, 16  
+             \bar "|"  %{ end measure 36 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 37 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 38 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 39 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 40 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 41 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 42 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 43 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 4  
+             \bar "|"  %{ end measure 44 %} 
+             < fis,  fis  > 4   
+             fis' 4  
+             e 8  
+             cis' 8  
+             e' 4  
+             \bar "|"  %{ end measure 45 %} 
+             d 8  
+             < a  e'  > 8   
+             d' 8  
+             a 8  
+             fis' 8  
+             a 8  
+             d 8  
+             a 8  
+             \bar "|"  %{ end measure 46 %} 
+             b, 8  
+             < d  fis  > 8   
+             < a  d'  > 8   
+             fis 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             b, 8  
+             \bar "|"  %{ end measure 47 %} 
+             a, 8  
+             e 8  
+             a 8  
+             b 8  
+             cis' 8  
+             e 8  
+             a 4  
+             \bar "|"  %{ end measure 48 %} 
+             fis 8  
+             cis' 8  
+             fis' 8  
+             fis 8  
+             e 8  
+             cis' 8  
+             e' 4  
+             \bar "|"  %{ end measure 49 %} 
+             d 8  
+             a 8  
+             d' 8  
+             a 8  
+             fis' 8  
+             d' 8  
+             d 8  
+             d' 8  
+             \bar "|"  %{ end measure 50 %} 
+             b, 8  
+             fis 8  
+             a 8  
+             b, 8  
+             < e,,  e,  > 8   
+             b, 8  
+             gis 8  
+             b, 8  
+             \bar "|"  %{ end measure 51 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 52 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 53 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 54 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 55 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 56 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 8  
+             e, 8  
+             \bar "|"  %{ end measure 57 %} 
+             fis, 8  
+             cis 8  
+             fis 8  
+             fis, 8  
+             d, 8  
+             a, 8  
+             e 8  
+             d, 8  
+             \bar "|"  %{ end measure 58 %} 
+             a, 8  
+             e 8  
+             cis' 8  
+             a, 8  
+             e, 8  
+             b, 8  
+             gis 4  
+             \bar "|"  %{ end measure 59 %} 
+             < fis,  cis  fis  > 2   
+             d, 8  
+             a, 8  
+             e 4  
+             \bar "|"  %{ end measure 60 %} 
+             a, 8  
+             e 8  
+             a 4  
+             e, 8  
+             b, 8  
+             e 4  
+             \bar "|"  %{ end measure 61 %} 
+             fis, 8  
+             cis 8  
+             a 8  
+             r 8  
+             d, 8  
+             a, 8  
+             a 4  
+             \bar "|"  %{ end measure 62 %} 
+             a, 8  
+             e 8  
+             a 4  
+             e, 8  
+             b, 8  
+             e 8  
+             gis 8  
+             \bar "|"  %{ end measure 63 %} 
+             fis, 16  
+             cis 16  
+             gis 16  
+             a 16  
+             cis' 16  
+             fis' 16  
+             gis' 16  
+             a' 16  
+             cis'' 16  
+             fis'' 16  
+             gis'' 16  
+             a'' 4  ~  
+             a'' 16  
+             \bar "|"  %{ end measure 64 %} 
+             r 2  
+             fis, 2  
+             \bar "|."  %{ end measure 65 %} 
+              } 
+            
+ 
+        >>
+      
+  } 
+ 
+\paper { }
+\layout {
+  \context {
+    \RemoveEmptyStaffContext
+    \override VerticalAxisGroup #'remove-first = ##t
+  }
+ }
+ 

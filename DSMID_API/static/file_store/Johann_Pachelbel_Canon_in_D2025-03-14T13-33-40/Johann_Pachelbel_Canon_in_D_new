@@ -1,0 +1,1742 @@
+\version "2.24" 
+color = #(define-music-function (parser location color) (string?) #{
+        \once \override NoteHead #'color = #(x11-color color)
+        \once \override Stem #'color = #(x11-color color)
+        \once \override Rest #'color = #(x11-color color)
+        \once \override Beam #'color = #(x11-color color)
+     #})
+    
+\header { 
+ title = "Johann Pachelbel Canon in D New"   
+  
+  } 
+ 
+\score  { 
+ 
+      << \new Staff  = xeyzwxdxfddfy { \clef "treble" 
+             \key d \major 
+             \time 4/4
+             cis'' 1  
+             \bar "|"  %{ end measure 1 %} 
+             cis'' 1  
+             \bar "|"  %{ end measure 2 %} 
+             b' 1  
+             \bar "|"  %{ end measure 3 %} 
+             b' 1  
+             \bar "|"  %{ end measure 4 %} 
+             a' 2  
+             a' 2  
+             \bar "|"  %{ end measure 5 %} 
+             b' 2  
+             cis'' 2  
+             \bar "|"  %{ end measure 6 %} 
+             < a'  d''  fis''  > 2   
+             < a'  cis''  e''  > 2   
+             \bar "|"  %{ end measure 7 %} 
+             < b'  g''  > 2   
+             < fis'  a'  cis''  > 2   
+             \bar "|"  %{ end measure 8 %} 
+             < d'  g'  b'  > 2   
+             fis'' 2  
+             \bar "|"  %{ end measure 9 %} 
+             < d'  g'  b'  > 2   
+             < e'  a'  cis''  > 2   
+             \bar "|"  %{ end measure 10 %} 
+             d'' 2  
+             fis'' 2  
+             \bar "|"  %{ end measure 11 %} 
+             a'' 2  
+             < b'  d''  > 2   
+             \bar "|"  %{ end measure 12 %} 
+             fis'' 4  
+             e'' 4  
+             < cis''  fis''  > 4   
+             e'' 4  
+             \bar "|"  %{ end measure 13 %} 
+             d'' 4  
+             < d''  fis''  > 4   
+             g'' 4.  
+             fis'' 8  
+             \bar "|"  %{ end measure 14 %} 
+             g'' 4  
+             g'' 4  
+             b'' 4  
+             a'' 4  
+             \bar "|"  %{ end measure 15 %} 
+             a'' 4  
+             b'' 4  
+             g'' 4.  
+             fis'' 8  
+             \bar "|"  %{ end measure 16 %} 
+             g'' 4  
+             < d''  fis''  > 4   
+             d'' 4  
+             < cis''  fis''  > 4   
+             \bar "|"  %{ end measure 17 %} 
+             e'' 4  
+             < b'  d''  > 4   
+             fis'' 4.  
+             < e'  a'  cis''  > 8   
+             \bar "|"  %{ end measure 18 %} 
+             fis'' 4  
+             < b'  g''  > 4   
+             b' 4  
+             r 4  
+             \bar "|"  %{ end measure 19 %} 
+             r 4  
+             g'' 4  
+             d'' 4.  
+             cis'' 8  
+             \bar "|"  %{ end measure 20 %} 
+             d'' 8  
+             a' 8  
+             a' 8  
+             cis'' 8  
+             d'' 4  
+             fis'' 4  
+             \bar "|"  %{ end measure 21 %} 
+             a'' 4  
+             b'' 4  
+             g'' 4.  
+             fis'' 8  
+             \bar "|"  %{ end measure 22 %} 
+             < fis''  a''  > 8   
+             b' 8  
+             b' 8  
+             c'' 8  
+             d'' 8  
+             cis'' 8  
+             a' 8  
+             d'' 8  
+             \bar "|"  %{ end measure 23 %} 
+             fis'' 8  
+             g'' 8  
+             fis'' 4  
+             e'' 4.  
+             b' 8  
+             \bar "|"  %{ end measure 24 %} 
+             a' 8  
+             < d''  fis''  > 8   
+             cis'' 8  
+             b' 8  
+             a'' 4  
+             b' 4  
+             \bar "|"  %{ end measure 25 %} 
+             d'' 4  
+             a'' 4  
+             d'' 4.  
+             fis'' 8  
+             \bar "|"  %{ end measure 26 %} 
+             < a'  d''  fis''  > 8   
+             d'' 8  
+             e'' 8  
+             fis'' 8  
+             < b'  d''  > 8   
+             < b'  d''  > 8   
+             fis'' 8  
+             d'' 8  
+             \bar "|"  %{ end measure 27 %} 
+             d'' 8  
+             b' 8  
+             d'' 4  
+             d'' 4.  
+             < fis''  a''  > 8   
+             \bar "|"  %{ end measure 28 %} 
+             fis'' 8  
+             d'' 8  
+             cis'' 8  
+             fis'' 8  
+             < e''  a''  c'''  > 8   
+             g' 8  
+             g'' 8  
+             b' 8  
+             \bar "|"  %{ end measure 29 %} 
+             g'' 8  
+             d'' 8  
+             g'' 8  
+             fis' 8  
+             fis'' 8  
+             d'' 8  
+             fis'' 8  
+             < cis''  e''  > 8   
+             \bar "|"  %{ end measure 30 %} 
+             a' 8  
+             g' 8  
+             e' 8  
+             b' 8  
+             a' 8  
+             cis'' 8  
+             b' 8  
+             cis'' 8  
+             \bar "|"  %{ end measure 31 %} 
+             b' 8  
+             cis'' 8  
+             g' 8  
+             b' 8  
+             b' 8  
+             g' 8  
+             e' 8  
+             a' 8  
+             \bar "|"  %{ end measure 32 %} 
+             < b'  g''  > 8   
+             < b'  d''  > 8   
+             < d''  fis''  a''  > 8   
+             cis'' 8  
+             e'' 8  
+             d'' 8  
+             b' 8  
+             g'' 8  
+             \bar "|"  %{ end measure 33 %} 
+             b' 8  
+             b'' 8  
+             c'' 8  
+             cis'' 8  
+             b' 8  
+             a' 8  
+             cis'' 8  
+             e'' 8  
+             \bar "|"  %{ end measure 34 %} 
+             a' 8  
+             d'' 8  
+             fis'' 8  
+             e'' 8  
+             e'' 8  
+             d'' 16  
+             a' 16  
+             d'' 8  
+             e'' 8  
+             \bar "|"  %{ end measure 35 %} 
+             e'' 8  
+             d'' 16  
+             e'' 16  
+             d'' 8  
+             a' 8  
+             g'' 4.  
+             < fis'  cis''  d''  > 8   
+             \bar "|"  %{ end measure 36 %} 
+             b' 8  
+             d'' 16  
+             d'' 16  
+             b' 8  
+             cis'' 16  
+             < e''  g''  > 16   
+             g'' 16  
+             d'' 16  
+             e' 16  
+             g'' 16  
+             cis'' 16  
+             a' 16  
+             cis'' 16  
+             d'' 16  
+             \bar "|"  %{ end measure 37 %} 
+             g' 8  
+             b' 16  
+             b' 16  
+             c'' 8  
+             g' 16  
+             fis'' 16  
+             d'' 16  
+             d'' 16  
+             a' 16  
+             a' 16  
+             fis'' 16  
+             g' 16  
+             e' 16  
+             c'' 16  
+             \bar "|"  %{ end measure 38 %} 
+             b' 8  
+             cis'' 16  
+             d'' 16  
+             cis'' 8  
+             g'' 16  
+             cis'' 16  
+             d'' 16  
+             b' 16  
+             b' 16  
+             g'' 16  
+             g' 16  
+             < e''  a''  c'''  > 16   
+             b' 16  
+             fis'' 16  
+             \bar "|"  %{ end measure 39 %} 
+             b' 8  
+             c'' 16  
+             cis'' 16  
+             d'' 8  
+             a'' 16  
+             d'' 16  
+             e'' 16  
+             a' 16  
+             cis'' 16  
+             < e'  a'  > 16   
+             < e'  a'  > 16   
+             < e'  a'  > 16   
+             d'' 16  
+             d'' 16  
+             \bar "|"  %{ end measure 40 %} 
+             cis'' 8  
+             cis'' 16  
+             fis'' 16  
+             d'' 8  
+             cis'' 16  
+             a' 16  
+             d'' 16  
+             fis'' 16  
+             b' 16  
+             d'' 16  
+             e'' 16  
+             fis'' 16  
+             g'' 16  
+             d'' 16  
+             \bar "|"  %{ end measure 41 %} 
+             cis'' 8  
+             b' 16  
+             a' 16  
+             d'' 8  
+             d'' 16  
+             b' 16  
+             g' 16  
+             cis'' 16  
+             a' 16  
+             d'' 16  
+             d'' 16  
+             fis'' 16  
+             a' 16  
+             a' 16  
+             \bar "|"  %{ end measure 42 %} 
+             fis'' 8  
+             < a'  fis''  a''  > 16   
+             < a'  d''  > 16   
+             a' 8  
+             fis'' 16  
+             b' 16  
+             b' 16  
+             e' 16  
+             a' 16  
+             d'' 16  
+             d'' 16  
+             d'' 16  
+             < cis''  e''  > 16   
+             < fis''  a''  d'''  > 16   
+             \bar "|"  %{ end measure 43 %} 
+             d'' 8  
+             fis'' 16  
+             a' 16  
+             b' 8  
+             b' 16  
+             fis'' 16  
+             d'' 16  
+             a' 16  
+             cis'' 16  
+             d'' 16  
+             d'' 16  
+             < b'  d''  > 16   
+             d'' 16  
+             d'' 16  
+             \bar "|"  %{ end measure 44 %} 
+             a' 8  
+             c'' 16  
+             cis'' 16  
+             cis'' 8  
+             b' 16  
+             a' 16  
+             d'' 16  
+             d'' 16  
+             fis'' 16  
+             fis'' 16  
+             b' 16  
+             e'' 16  
+             cis'' 16  
+             cis'' 16  
+             \bar "|"  %{ end measure 45 %} 
+             d'' 8  
+             a' 16  
+             e'' 16  
+             a' 8  
+             d'' 16  
+             < fis''  a''  d'''  > 16   
+             cis'' 16  
+             b' 16  
+             e'' 16  
+             d'' 16  
+             d'' 16  
+             e'' 16  
+             a' 16  
+             cis'' 16  
+             \bar "|"  %{ end measure 46 %} 
+             < b'  d''  > 8   
+             a' 16  
+             a' 16  
+             b' 8  
+             a' 16  
+             b' 16  
+             a' 16  
+             b' 16  
+             d'' 16  
+             a' 16  
+             d'' 16  
+             a' 16  
+             b' 16  
+             g' 16  
+             \bar "|"  %{ end measure 47 %} 
+             e' 8  
+             fis'' 16  
+             d'' 16  
+             < a'  e''  > 8   
+             fis'' 16  
+             cis'' 16  
+             d'' 16  
+             fis'' 16  
+             g'' 16  
+             < d''  fis''  > 16   
+             a'' 16  
+             d'' 16  
+             b' 16  
+             a'' 16  
+             \bar "|"  %{ end measure 48 %} 
+             cis'' 8  
+             d'' 16  
+             d'' 16  
+             e'' 8  
+             e'' 16  
+             a' 16  
+             cis'' 16  
+             b' 16  
+             cis'' 16  
+             cis'' 16  
+             cis'' 16  
+             b' 16  
+             cis'' 16  
+             a' 16  
+             \bar "|"  %{ end measure 49 %} 
+             e'' 8  
+             e'' 16  
+             c'' 16  
+             fis'' 8  
+             < fis''  a''  > 16   
+             < fis'  cis''  d''  > 16   
+             fis'' 16  
+             b' 16  
+             cis'' 16  
+             cis'' 16  
+             fis'' 16  
+             d'' 16  
+             < cis''  e''  > 16   
+             g'' 16  
+             \bar "|"  %{ end measure 50 %} 
+             e'' 8  
+             a' 16  
+             a' 16  
+             g' 8  
+             g' 16  
+             < a'  d''  > 16   
+             a' 16  
+             b' 16  
+             fis'' 16  
+             d'' 16  
+             g' 16  
+             b' 16  
+             b' 16  
+             g' 16  
+             \bar "|"  %{ end measure 51 %} 
+             e'' 8  
+             fis'' 16  
+             a' 16  
+             fis' 8  
+             d'' 16  
+             cis'' 16  
+             g' 16  
+             b' 16  
+             d'' 16  
+             cis'' 16  
+             d'' 16  
+             fis'' 16  
+             cis'' 16  
+             cis'' 16  
+             \bar "|"  %{ end measure 52 %} 
+             a' 8  
+             d'' 8  
+             d'' 8  
+             b' 8  
+             fis'' 8  
+             < fis'  cis''  d''  > 8   
+             < fis''  a''  > 8   
+             fis'' 8  
+             \bar "|"  %{ end measure 53 %} 
+             d'' 4.  
+             e'' 8  
+             cis'' 8  
+             c'' 8  
+             a' 8  
+             a'' 8  
+             \bar "|"  %{ end measure 54 %} 
+             fis'' 8  
+             e'' 8  
+             e'' 8  
+             e'' 8  
+             a'' 4  
+             cis'' 8.  
+             cis'' 16  
+             \bar "|"  %{ end measure 55 %} 
+             < e'  a'  > 8   
+             b' 8  
+             d'' 8  
+             a' 8  
+             d'' 4  
+             < e''  g''  > 4   
+             \bar "|"  %{ end measure 56 %} 
+             a'' 4.  
+             e'' 8  
+             e'' 8  
+             g' 8  
+             g'' 8  
+             e'' 8  
+             \bar "|"  %{ end measure 57 %} 
+             e'' 4.  
+             < b'  g''  > 8   
+             d'' 8  
+             cis'' 8  
+             b' 8  
+             g' 8  
+             \bar "|"  %{ end measure 58 %} 
+             b' 8  
+             cis'' 8  
+             a' 8  
+             b' 8  
+             < cis''  fis''  > 4   
+             d'' 8.  
+             a' 16  
+             \bar "|"  %{ end measure 59 %} 
+             a' 8  
+             a' 8  
+             b' 8  
+             cis'' 8  
+             c'' 4.  
+             g'' 8  
+             \bar "|"  %{ end measure 60 %} 
+             e'' 8  
+             a' 8  
+             cis'' 8  
+             g' 8  
+             g' 8  
+             a' 8  
+             d'' 8  
+             g' 8  
+             \bar "|"  %{ end measure 61 %} 
+             d'' 8  
+             cis'' 8  
+             b' 8  
+             b' 8  
+             < d''  a''  b''  > 8   
+             d'' 8  
+             b' 8  
+             cis'' 8  
+             \bar "|"  %{ end measure 62 %} 
+             fis'' 8  
+             a' 8  
+             d'' 8  
+             g' 8  
+             d'' 8  
+             d'' 8  
+             cis'' 8  
+             e'' 8  
+             \bar "|"  %{ end measure 63 %} 
+             < g'  b'  > 8   
+             d'' 8  
+             d'' 8  
+             d'' 8  
+             d'' 8  
+             < g'  b'  > 8   
+             fis'' 8  
+             cis'' 8  
+             \bar "|"  %{ end measure 64 %} 
+             d'' 8  
+             a' 8  
+             e'' 8  
+             d'' 8  
+             cis'' 8  
+             d'' 8  
+             a'' 8  
+             fis'' 8  
+             \bar "|"  %{ end measure 65 %} 
+             e'' 8  
+             a' 8  
+             fis'' 8  
+             cis'' 8  
+             e' 8  
+             e'' 8  
+             d'' 8  
+             b' 8  
+             \bar "|"  %{ end measure 66 %} 
+             g' 8  
+             a' 8  
+             e'' 8  
+             g' 8  
+             cis'' 8  
+             c'' 8  
+             < a'  cis''  > 8   
+             < fis'  a'  d''  > 8   
+             \bar "|"  %{ end measure 67 %} 
+             < a'  cis''  > 8   
+             < a'  cis''  > 8   
+             < a'  cis''  > 8   
+             e'' 8  
+             a' 8  
+             c'' 8  
+             e'' 8  
+             c'' 8  
+             \bar "|"  %{ end measure 68 %} 
+             a' 8  
+             d'' 16  
+             fis' 16  
+             g'' 8  
+             a' 8  
+             < cis''  e''  > 8   
+             e'' 16  
+             < b'  d''  > 16   
+             a'' 8  
+             d'' 8  
+             \bar "|"  %{ end measure 69 %} 
+             a' 8  
+             a' 16  
+             d'' 16  
+             c'' 8  
+             e'' 8  
+             fis'' 8  
+             cis'' 16  
+             d'' 16  
+             e'' 8  
+             < d''  fis''  a''  > 8   
+             \bar "|"  %{ end measure 70 %} 
+             cis'' 8  
+             e'' 16  
+             d'' 16  
+             g' 8  
+             < b'  d''  > 8   
+             < b'  d''  > 8   
+             < b'  d''  > 16   
+             < b'  d''  > 16   
+             g' 8  
+             a' 8  
+             \bar "|"  %{ end measure 71 %} 
+             e'' 8  
+             b' 16  
+             b' 16  
+             e'' 8  
+             < a'  d''  fis''  > 8   
+             fis'' 8  
+             g'' 16  
+             a'' 16  
+             fis'' 8  
+             g'' 8  
+             \bar "|"  %{ end measure 72 %} 
+             fis'' 8  
+             d'' 16  
+             fis'' 16  
+             a' 8  
+             g' 8  
+             fis' 8  
+             e'' 16  
+             a' 16  
+             fis'' 8  
+             c'' 8  
+             \bar "|"  %{ end measure 73 %} 
+             < d'  fis'  a'  d''  > 8   
+             cis'' 16  
+             < d''  g''  > 16   
+             < fis''  a''  > 8   
+             e'' 8  
+             fis'' 8  
+             fis'' 16  
+             fis'' 16  
+             e'' 8  
+             < e'  e''  > 8   
+             \bar "|"  %{ end measure 74 %} 
+             < d''  g''  > 8   
+             e'' 16  
+             b' 16  
+             cis'' 8  
+             g'' 8  
+             c'' 8  
+             cis'' 16  
+             cis'' 16  
+             c'' 8  
+             cis'' 8  
+             \bar "|"  %{ end measure 75 %} 
+             g' 8  
+             fis'' 16  
+             fis'' 16  
+             d'' 8  
+             g'' 8  
+             cis'' 4  
+             < a'  d''  fis''  > 4   
+             \bar "|"  %{ end measure 76 %} 
+             cis'' 4.  
+             fis'' 8  
+             e'' 8  
+             e'' 8  
+             e'' 8  
+             cis'' 8  
+             \bar "|"  %{ end measure 77 %} 
+             a' 4.  
+             d'' 8  
+             < cis''  d''  > 8   
+             < b'  d''  > 8   
+             < b'  d''  > 8   
+             < b'  d''  > 8   
+             \bar "|"  %{ end measure 78 %} 
+             < b'  d''  > 2   
+             < b'  d''  > 4   
+             < b'  d''  > 4   
+             \bar "|"  %{ end measure 79 %} 
+             < b'  d''  > 2   
+             d'' 4.  
+             e'' 8  
+             \bar "|"  %{ end measure 80 %} 
+             e'' 4.  
+             d'' 8  
+             e'' 8  
+             fis'' 8  
+             fis'' 8  
+             fis'' 8  
+             \bar "|"  %{ end measure 81 %} 
+             a'' 4.  
+             a'' 8  
+             fis'' 8  
+             d'' 8  
+             fis' 8  
+             c'' 8  
+             \bar "|"  %{ end measure 82 %} 
+             d'' 8  
+             b' 8  
+             fis' 8  
+             a' 8  
+             c'' 4  
+             c'' 8.  
+             < a'  cis''  > 16   
+             \bar "|"  %{ end measure 83 %} 
+             < e'  e''  > 8   
+             fis'' 8  
+             fis'' 8  
+             fis'' 8  
+             fis'' 4.  
+             g'' 8  
+             \bar "|"  %{ end measure 84 %} 
+             g'' 4.  
+             fis'' 8  
+             fis'' 8  
+             fis'' 8  
+             fis'' 8  
+             < e'  e''  > 8   
+             \bar "|"  %{ end measure 85 %} 
+             < a'  cis''  > 4.   
+             c'' 8  
+             < d'  fis'  a'  d''  > 8   
+             fis' 8  
+             fis'' 8  
+             fis'' 8  
+             \bar "|"  %{ end measure 86 %} 
+             b' 8  
+             a' 8  
+             cis'' 8  
+             a'' 8  
+             b' 4  
+             a' 8.  
+             a' 16  
+             \bar "|"  %{ end measure 87 %} 
+             a'' 8  
+             a'' 8  
+             fis'' 8  
+             d'' 8  
+             d'' 4  
+             d'' 4  
+             \bar "|"  %{ end measure 88 %} 
+             a' 4.  
+             e'' 8  
+             g' 8  
+             < b'  d''  > 8   
+             < b'  d''  > 8   
+             < b'  d''  > 8   
+             \bar "|"  %{ end measure 89 %} 
+             < b'  d''  > 4   
+             < b'  d''  > 2   
+             < b'  d''  > 4   
+             \bar "|"  %{ end measure 90 %} 
+             < b'  d''  > 4   
+             < b'  d''  > 4   
+             < b'  d''  > 4   
+             g' 4  
+             \bar "|"  %{ end measure 91 %} 
+             < g'  b'  > 2   
+             b' 2  
+             \bar "|"  %{ end measure 92 %} 
+             d'' 4  
+             cis'' 2  
+             cis'' 4  
+             \bar "|"  %{ end measure 93 %} 
+             d'' 4  
+             b' 2  
+             a'' 4  
+             \bar "|"  %{ end measure 94 %} 
+             fis'' 4  
+             e'' 4  
+             fis'' 4  
+             d'' 4  
+             \bar "|"  %{ end measure 95 %} 
+             d'' 4.  
+             a' 8  
+             fis'' 4  
+             r 4  
+             \bar "|"  %{ end measure 96 %} 
+             b' 2  
+             e'' 4.  
+             e'' 8  
+             \bar "|"  %{ end measure 97 %} 
+             fis'' 2  
+             fis'' 4.  
+             g'' 8  
+             \bar "|"  %{ end measure 98 %} 
+             g'' 2  
+             g'' 4  
+             g'' 4  
+             \bar "|"  %{ end measure 99 %} 
+             g'' 4.  
+             g'' 8  
+             g'' 4.  
+             g'' 8  
+             \bar "|"  %{ end measure 100 %} 
+             g'' 4..  
+             g'' 16  
+             fis'' 2  
+             \bar "|"  %{ end measure 101 %} 
+             fis'' 1  
+             < d''  g''  > 8   
+             \bar "|."  %{ end measure 102 %} 
+              } 
+            
+ 
+       \new Staff  = xeyzweybcewzy { \clef "bass" 
+             \key d \major 
+             \time 4/4
+             cis' 8  
+             cis' 8  
+             b, 8  
+             b, 8  
+             fis 8  
+             fis 8  
+             b 8  
+             d' 8  
+             \bar "|"  %{ end measure 1 %} 
+             fis, 8  
+             cis 8  
+             g, 8  
+             a 8  
+             g, 8  
+             a 8  
+             g 8  
+             b 8  
+             \bar "|"  %{ end measure 2 %} 
+             d, 8  
+             a, 8  
+             d 8  
+             fis, 8  
+             g, 8  
+             d' 8  
+             b 8  
+             b 8  
+             \bar "|"  %{ end measure 3 %} 
+             fis 8  
+             b, 8  
+             cis' 8  
+             cis' 8  
+             d 8  
+             d 8  
+             a 8  
+             d' 8  
+             \bar "|"  %{ end measure 4 %} 
+             d' 8  
+             a 8  
+             d 8  
+             cis' 8  
+             cis' 8  
+             b, 8  
+             fis 8  
+             b 8  
+             \bar "|"  %{ end measure 5 %} 
+             d' 8  
+             fis, 8  
+             a, 8  
+             b 8  
+             a 8  
+             g, 8  
+             b 8  
+             fis' 8  
+             \bar "|"  %{ end measure 6 %} 
+             d 8  
+             b 8  
+             d, 8  
+             a, 8  
+             d 8  
+             fis 8  
+             g, 8  
+             d 8  
+             \bar "|"  %{ end measure 7 %} 
+             g 8  
+             b 8  
+             a, 8  
+             e 8  
+             a 8  
+             fis 8  
+             d' 8  
+             d 8  
+             \bar "|"  %{ end measure 8 %} 
+             a, 8  
+             d 8  
+             cis 8  
+             g 8  
+             fis, 8  
+             cis 8  
+             b 8  
+             a 8  
+             \bar "|"  %{ end measure 9 %} 
+             e 8  
+             b 8  
+             cis 8  
+             fis 8  
+             e 8  
+             d' 8  
+             a, 8  
+             b, 8  
+             \bar "|"  %{ end measure 10 %} 
+             a 8  
+             a, 8  
+             d' 8  
+             d' 8  
+             fis, 8  
+             fis 8  
+             a, 8  
+             d 8  
+             \bar "|"  %{ end measure 11 %} 
+             fis 8  
+             b 8  
+             b 8  
+             fis 8  
+             b 8  
+             d 8  
+             d 8  
+             a, 8  
+             \bar "|"  %{ end measure 12 %} 
+             a 8  
+             d 8  
+             b 8  
+             cis 8  
+             d 8  
+             a 8  
+             b 8  
+             a, 8  
+             \bar "|"  %{ end measure 13 %} 
+             cis' 8  
+             a 8  
+             fis 8  
+             e 8  
+             a 8  
+             a, 8  
+             a, 8  
+             d 8  
+             \bar "|"  %{ end measure 14 %} 
+             b 8  
+             b 8  
+             fis, 8  
+             a, 8  
+             b 8  
+             d 8  
+             g, 8  
+             e 8  
+             \bar "|"  %{ end measure 15 %} 
+             d 8  
+             e 8  
+             fis 8  
+             g 8  
+             d, 8  
+             fis 8  
+             g 8  
+             cis' 8  
+             \bar "|"  %{ end measure 16 %} 
+             cis' 8  
+             b 8  
+             a, 8  
+             a 8  
+             cis' 8  
+             fis' 8  
+             b 8  
+             fis 8  
+             \bar "|"  %{ end measure 17 %} 
+             b 8  
+             cis' 8  
+             d' 8  
+             d 8  
+             d' 8  
+             e 8  
+             d' 8  
+             a 8  
+             \bar "|"  %{ end measure 18 %} 
+             a, 8  
+             a, 8  
+             a 8  
+             d 8  
+             fis 8  
+             g, 8  
+             a 8  
+             a, 8  
+             \bar "|"  %{ end measure 19 %} 
+             cis 8  
+             a, 8  
+             a 8  
+             g, 8  
+             b 8  
+             g, 8  
+             a, 8  
+             g 8  
+             \bar "|"  %{ end measure 20 %} 
+             cis' 8  
+             d 8  
+             cis' 8  
+             a, 8  
+             d 8  
+             d' 8  
+             d' 8  
+             a 8  
+             \bar "|"  %{ end measure 21 %} 
+             fis 8  
+             e 8  
+             e 8  
+             a 8  
+             b 8  
+             b 8  
+             e 8  
+             g 8  
+             \bar "|"  %{ end measure 22 %} 
+             a, 8  
+             a 8  
+             fis 8  
+             fis, 8  
+             fis 8  
+             b 8  
+             cis 8  
+             cis 8  
+             \bar "|"  %{ end measure 23 %} 
+             g, 8  
+             d, 8  
+             g, 8  
+             cis' 8  
+             b 8  
+             b 8  
+             e 8  
+             a 8  
+             \bar "|"  %{ end measure 24 %} 
+             a 8  
+             b 8  
+             a 8  
+             a, 8  
+             a 8  
+             a, 8  
+             a 8  
+             d' 8  
+             \bar "|"  %{ end measure 25 %} 
+             a, 8  
+             b 8  
+             cis 8  
+             a 8  
+             d' 8  
+             a, 8  
+             a 8  
+             b 8  
+             \bar "|"  %{ end measure 26 %} 
+             e 8  
+             b 8  
+             g, 8  
+             cis 8  
+             fis 8  
+             a, 8  
+             a, 8  
+             a, 8  
+             \bar "|"  %{ end measure 27 %} 
+             fis 8  
+             a 8  
+             d 8  
+             g 8  
+             a, 8  
+             d 8  
+             a 8  
+             a 8  
+             \bar "|"  %{ end measure 28 %} 
+             cis 8  
+             a, 8  
+             a, 8  
+             d 8  
+             e 8  
+             a, 8  
+             fis 8  
+             e 8  
+             \bar "|"  %{ end measure 29 %} 
+             a, 8  
+             a, 8  
+             fis 8  
+             a 8  
+             fis 8  
+             a, 8  
+             d, 8  
+             e 8  
+             \bar "|"  %{ end measure 30 %} 
+             d, 8  
+             fis 8  
+             a, 8  
+             d 8  
+             a 8  
+             a 8  
+             d 8  
+             a, 8  
+             \bar "|"  %{ end measure 31 %} 
+             fis 8  
+             g, 8  
+             g, 8  
+             d 8  
+             fis 8  
+             a 8  
+             g, 8  
+             a 8  
+             \bar "|"  %{ end measure 32 %} 
+             a 8  
+             e 8  
+             d 8  
+             a 8  
+             fis 8  
+             a 8  
+             a 8  
+             cis' 8  
+             \bar "|"  %{ end measure 33 %} 
+             a, 8  
+             g, 8  
+             cis 8  
+             a 8  
+             a 8  
+             a, 8  
+             a, 8  
+             b 8  
+             \bar "|"  %{ end measure 34 %} 
+             a, 8  
+             d 8  
+             d 8  
+             b 8  
+             a, 8  
+             cis' 8  
+             a 8  
+             d 8  
+             \bar "|"  %{ end measure 35 %} 
+             fis 8  
+             a, 8  
+             fis 8  
+             a, 8  
+             b 8  
+             fis 8  
+             g, 8  
+             a 8  
+             \bar "|"  %{ end measure 36 %} 
+             a, 8  
+             b 8  
+             cis' 8  
+             fis 8  
+             fis 8  
+             a 8  
+             a, 8  
+             a, 8  
+             \bar "|"  %{ end measure 37 %} 
+             fis' 8  
+             cis 8  
+             g, 8  
+             b, 8  
+             g, 8  
+             g, 8  
+             b, 8  
+             a 8  
+             \bar "|"  %{ end measure 38 %} 
+             fis, 8  
+             g 8  
+             e 8  
+             a, 8  
+             e 8  
+             g 8  
+             d, 8  
+             a 8  
+             \bar "|"  %{ end measure 39 %} 
+             a, 8  
+             g, 8  
+             d 8  
+             d, 8  
+             e 8  
+             a, 8  
+             cis' 8  
+             fis' 8  
+             \bar "|"  %{ end measure 40 %} 
+             b 8  
+             a 8  
+             a 8  
+             fis' 8  
+             d' 8  
+             a 8  
+             g 8  
+             a, 8  
+             \bar "|"  %{ end measure 41 %} 
+             fis' 8  
+             e 8  
+             a, 8  
+             d 8  
+             d 8  
+             g, 8  
+             b 8  
+             d 8  
+             \bar "|"  %{ end measure 42 %} 
+             cis' 8  
+             d, 8  
+             g 8  
+             g 8  
+             g 8  
+             d, 8  
+             cis' 8  
+             d 8  
+             \bar "|"  %{ end measure 43 %} 
+             b 8  
+             g, 8  
+             g 8  
+             d 8  
+             d 8  
+             d 8  
+             d 8  
+             a, 8  
+             \bar "|"  %{ end measure 44 %} 
+             g, 8  
+             b, 8  
+             b 8  
+             fis, 8  
+             d 8  
+             e 8  
+             fis' 8  
+             d 8  
+             \bar "|"  %{ end measure 45 %} 
+             fis, 8  
+             d, 8  
+             a 8  
+             fis 8  
+             a 8  
+             g 8  
+             fis 8  
+             b, 8  
+             \bar "|"  %{ end measure 46 %} 
+             a, 8  
+             a, 8  
+             a, 8  
+             a, 8  
+             g 8  
+             fis 8  
+             e 8  
+             d 8  
+             \bar "|"  %{ end measure 47 %} 
+             a, 8  
+             g, 8  
+             d 8  
+             a 8  
+             fis 8  
+             a, 8  
+             e 8  
+             b 8  
+             \bar "|"  %{ end measure 48 %} 
+             fis' 8  
+             d' 8  
+             cis' 8  
+             d' 8  
+             d 8  
+             a, 8  
+             d 8  
+             d 8  
+             \bar "|"  %{ end measure 49 %} 
+             d 8  
+             d 8  
+             a, 8  
+             g, 8  
+             fis 8  
+             b 8  
+             fis 8  
+             b 8  
+             \bar "|"  %{ end measure 50 %} 
+             b 8  
+             cis' 8  
+             cis' 8  
+             d 8  
+             b, 8  
+             g 8  
+             cis' 8  
+             a, 8  
+             \bar "|"  %{ end measure 51 %} 
+             d 8  
+             a, 8  
+             b 8  
+             d 8  
+             g 8  
+             b, 8  
+             e 8  
+             cis' 8  
+             \bar "|"  %{ end measure 52 %} 
+             fis 8  
+             fis 8  
+             cis 8  
+             a 8  
+             a, 8  
+             cis 8  
+             d 8  
+             d' 8  
+             \bar "|"  %{ end measure 53 %} 
+             fis 8  
+             d, 8  
+             fis' 8  
+             b 8  
+             a, 8  
+             cis 8  
+             g, 8  
+             d, 8  
+             \bar "|"  %{ end measure 54 %} 
+             g 8  
+             g 8  
+             b 8  
+             d 8  
+             fis 8  
+             d 8  
+             d, 8  
+             fis, 8  
+             \bar "|"  %{ end measure 55 %} 
+             d 8  
+             b 8  
+             d, 8  
+             fis, 8  
+             cis 8  
+             a 8  
+             e 8  
+             a 8  
+             \bar "|"  %{ end measure 56 %} 
+             a, 8  
+             a 8  
+             a, 8  
+             a 8  
+             cis 8  
+             a 8  
+             b 8  
+             g 8  
+             \bar "|"  %{ end measure 57 %} 
+             a 8  
+             fis, 8  
+             g, 8  
+             d, 8  
+             g 8  
+             d 8  
+             g 8  
+             g, 8  
+             \bar "|"  %{ end measure 58 %} 
+             g 8  
+             g 8  
+             g, 8  
+             g 8  
+             b 8  
+             g 8  
+             b 8  
+             cis 8  
+             \bar "|"  %{ end measure 59 %} 
+             d 8  
+             b 8  
+             cis' 8  
+             cis 8  
+             cis' 8  
+             fis 8  
+             e 8  
+             cis' 8  
+             \bar "|"  %{ end measure 60 %} 
+             a, 8  
+             a, 8  
+             fis' 8  
+             b, 8  
+             g, 8  
+             a 8  
+             a, 8  
+             a 8  
+             \bar "|"  %{ end measure 61 %} 
+             b 8  
+             a, 8  
+             d 8  
+             d' 8  
+             fis, 8  
+             fis 8  
+             d 8  
+             d 8  
+             \bar "|"  %{ end measure 62 %} 
+             d 8  
+             fis 8  
+             g, 8  
+             d' 8  
+             a 8  
+             fis 8  
+             b 8  
+             d, 8  
+             \bar "|"  %{ end measure 63 %} 
+             fis 8  
+             fis' 8  
+             b 8  
+             b 8  
+             d, 8  
+             a 8  
+             g, 8  
+             fis, 8  
+             \bar "|"  %{ end measure 64 %} 
+             cis' 8  
+             b 8  
+             a 8  
+             d' 8  
+             d 8  
+             a 8  
+             a 8  
+             d 8  
+             \bar "|"  %{ end measure 65 %} 
+             g, 8  
+             a, 8  
+             g 8  
+             cis' 8  
+             g 8  
+             g 8  
+             fis 8  
+             fis 8  
+             \bar "|"  %{ end measure 66 %} 
+             fis 8  
+             fis 8  
+             g 8  
+             fis 8  
+             d 8  
+             d, 8  
+             fis 8  
+             g, 8  
+             \bar "|"  %{ end measure 67 %} 
+             fis 8  
+             d' 8  
+             b 8  
+             cis' 8  
+             b, 8  
+             cis' 8  
+             fis' 8  
+             e 8  
+             \bar "|"  %{ end measure 68 %} 
+             b 8  
+             fis 8  
+             d' 8  
+             b 8  
+             g, 8  
+             a 8  
+             fis 8  
+             fis 8  
+             \bar "|"  %{ end measure 69 %} 
+             b 8  
+             b 8  
+             b 8  
+             d' 8  
+             d 8  
+             g, 8  
+             g, 8  
+             g, 8  
+             \bar "|"  %{ end measure 70 %} 
+             d 8  
+             a 8  
+             b 8  
+             fis 8  
+             d 8  
+             d 8  
+             d 8  
+             b 8  
+             \bar "|"  %{ end measure 71 %} 
+             d 8  
+             e 8  
+             b 8  
+             a 8  
+             a 8  
+             b 8  
+             a 8  
+             fis 8  
+             \bar "|"  %{ end measure 72 %} 
+             d' 8  
+             g, 8  
+             fis' 8  
+             d' 8  
+             a 8  
+             a, 8  
+             g, 8  
+             b 8  
+             \bar "|"  %{ end measure 73 %} 
+             d, 8  
+             b 8  
+             g, 8  
+             d 8  
+             g, 8  
+             a 8  
+             g, 8  
+             g, 8  
+             \bar "|"  %{ end measure 74 %} 
+             fis 8  
+             g, 8  
+             fis 8  
+             g 8  
+             cis' 8  
+             cis 8  
+             g, 8  
+             g, 8  
+             \bar "|"  %{ end measure 75 %} 
+             b, 8  
+             b 8  
+             d 8  
+             g 8  
+             fis, 8  
+             fis' 8  
+             a 8  
+             a, 8  
+             \bar "|"  %{ end measure 76 %} 
+             b 8  
+             cis' 8  
+             d 8  
+             fis 8  
+             e 8  
+             fis 8  
+             d' 8  
+             d 8  
+             \bar "|"  %{ end measure 77 %} 
+             a 8  
+             g, 8  
+             b 8  
+             cis 8  
+             cis' 8  
+             a 8  
+             a 8  
+             cis' 8  
+             \bar "|"  %{ end measure 78 %} 
+             cis 8  
+             a 8  
+             g, 8  
+             a 8  
+             d 8  
+             d' 8  
+             d, 8  
+             a, 8  
+             \bar "|"  %{ end measure 79 %} 
+             d 8  
+             g, 8  
+             a 8  
+             d 8  
+             b 8  
+             a 8  
+             a 8  
+             cis' 8  
+             \bar "|"  %{ end measure 80 %} 
+             a 8  
+             g 8  
+             e 8  
+             fis' 8  
+             a 8  
+             d 8  
+             e 8  
+             g, 8  
+             \bar "|"  %{ end measure 81 %} 
+             cis' 8  
+             g 8  
+             g, 8  
+             g, 8  
+             a 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             \bar "|"  %{ end measure 82 %} 
+             fis, 8  
+             g, 8  
+             g, 8  
+             b 8  
+             g 8  
+             d, 8  
+             fis 8  
+             e 8  
+             \bar "|"  %{ end measure 83 %} 
+             a, 8  
+             cis 8  
+             cis 8  
+             b, 8  
+             a, 8  
+             b 8  
+             e 8  
+             d 8  
+             \bar "|"  %{ end measure 84 %} 
+             g, 8  
+             g, 8  
+             d 8  
+             a, 8  
+             b 8  
+             fis 8  
+             fis 8  
+             a 8  
+             \bar "|"  %{ end measure 85 %} 
+             cis' 8  
+             a 8  
+             a 8  
+             a 8  
+             a 8  
+             a 8  
+             a 8  
+             a 8  
+             \bar "|"  %{ end measure 86 %} 
+             a 8  
+             a 8  
+             a 8  
+             b 8  
+             b, 8  
+             b 8  
+             d' 8  
+             fis, 8  
+             \bar "|"  %{ end measure 87 %} 
+             d 8  
+             fis 8  
+             a 8  
+             b 8  
+             fis' 8  
+             e 8  
+             a 8  
+             cis' 8  
+             \bar "|"  %{ end measure 88 %} 
+             fis' 8  
+             fis' 8  
+             a, 8  
+             d 8  
+             g 8  
+             g, 8  
+             a, 8  
+             b 8  
+             \bar "|"  %{ end measure 89 %} 
+             g 8  
+             g, 8  
+             a 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             \bar "|"  %{ end measure 90 %} 
+             cis 8  
+             cis 8  
+             d' 8  
+             g, 8  
+             g 8  
+             fis 8  
+             a, 8  
+             a, 8  
+             \bar "|"  %{ end measure 91 %} 
+             a, 8  
+             a 8  
+             a, 8  
+             fis' 8  
+             cis 8  
+             fis' 8  
+             d' 8  
+             d 8  
+             \bar "|"  %{ end measure 92 %} 
+             d' 8  
+             a, 8  
+             d, 8  
+             d' 8  
+             b 8  
+             fis 8  
+             a 8  
+             a 8  
+             \bar "|"  %{ end measure 93 %} 
+             e 8  
+             e 8  
+             e 8  
+             e 8  
+             e 8  
+             e 8  
+             e 8  
+             e 8  
+             \bar "|"  %{ end measure 94 %} 
+             e 8  
+             e 8  
+             e 8  
+             a 8  
+             a 8  
+             a 8  
+             a 8  
+             g, 8  
+             \bar "|"  %{ end measure 95 %} 
+             d, 8  
+             d 8  
+             cis 8  
+             g, 8  
+             d 8  
+             d' 8  
+             fis 8  
+             fis 8  
+             \bar "|"  %{ end measure 96 %} 
+             cis' 8  
+             b 8  
+             d 8  
+             a 8  
+             a, 8  
+             g, 8  
+             cis' 8  
+             g 8  
+             \bar "|"  %{ end measure 97 %} 
+             fis 8  
+             g, 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             cis 8  
+             \bar "|"  %{ end measure 98 %} 
+             cis 8  
+             cis 8  
+             cis 8  
+             fis 8  
+             g, 8  
+             g, 8  
+             d, 8  
+             a 8  
+             \bar "|"  %{ end measure 99 %} 
+             b 8  
+             fis' 8  
+             a, 8  
+             a, 8  
+             fis' 8  
+             a, 8  
+             b 8  
+             cis' 8  
+             \bar "|"  %{ end measure 100 %} 
+             g, 4..  
+             d 16  
+             d 2  
+             \bar "|"  %{ end measure 101 %} 
+             b 1  
+             a 8  
+             \bar "|."  %{ end measure 102 %} 
+              } 
+            
+ 
+        >>
+      
+  } 
+ 
+\paper { }
+\layout {
+  \context {
+    \RemoveEmptyStaffContext
+    \override VerticalAxisGroup #'remove-first = ##t
+  }
+ }
+ 
