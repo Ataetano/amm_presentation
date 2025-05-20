@@ -1,4 +1,0 @@
-streamlit==1.40.2
-numpy==2.0.2
-music21==9.3.0
-matplotlib==3.9.2
