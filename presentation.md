@@ -197,7 +197,43 @@ $$
 {\small
 \begin{aligned}
 \{p_k\}_{k=0}^{4} &= \{C4, C4, G4, A4, F4\} \\[1em]
-&\Downarrow \text{(Expanding the Symbolic Music Data)} \\[1em]
+\end{aligned}
+}
+$$
+
+---
+
+$$ 
+{\small
+\begin{aligned}
+\{p_k\}_{k=0}^{4} &= \{C4, C4, G4, A4, F4\} \\[1em]
+&\Downarrow \text{(Augmenting the Symbolic Music Dataset)} \\[1em]
+\{p^*_k\}_{k=0}^{9} &= \{C4, C4, C4, C4, G4, G4, A4, A4, F4, F4\} \\[1em]
+\end{aligned}
+}
+$$
+
+---
+
+$$ 
+{\small
+\begin{aligned}
+\{p_k\}_{k=0}^{4} &= \{C4, C4, G4, A4, F4\} \\[1em]
+&\Downarrow \text{(Augmenting the Symbolic Music Dataset)} \\[1em]
+\{p^*_k\}_{k=0}^{9} &= \{C4, C4, C4, C4, G4, G4, A4, A4, F4, F4\} \\[1em]
+&\Downarrow \text{(Overview of Our Method)} \\[1em]
+\{p^\prime_k\}_{k=0}^{9} &= \{G4, C4, A4, G4, F4, F4, C4, C4, F4, C4\} \\[1em]
+\end{aligned}
+}
+$$
+
+---
+
+$$ 
+{\small
+\begin{aligned}
+\{p_k\}_{k=0}^{4} &= \{C4, C4, G4, A4, F4\} \\[1em]
+&\Downarrow \text{(Augmenting the Symbolic Music Dataset)} \\[1em]
 \{p^*_k\}_{k=0}^{9} &= \{C4, C4, C4, C4, G4, G4, A4, A4, F4, F4\} \\[1em]
 &\Downarrow \text{(Overview of Our Method)} \\[1em]
 \{p^\prime_k\}_{k=0}^{9} &= \{G4, C4, A4, G4, F4, F4, C4, C4, F4, C4\} \\[1em]
