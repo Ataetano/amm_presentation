@@ -54,17 +54,7 @@ Ratthaprom Promkam
 
 ---
 
-<!-- header: Project Overview -->
-
-<center>
-<br>
-<br>
-<br>
-<br>
-<h1> Project Overview </h1>
-<center>
-
----
+<!-- header: Overview -->
 
 ![bg](img/problem1.png)
 
@@ -74,17 +64,17 @@ Ratthaprom Promkam
 
 ---
 
-<!-- header: Overview of Our Method -->
+<!-- header: Chaos-Driven Variation Method -->
 
-<center>
+<!-- <center>
 <br>
 <br>
 <br>
 <br>
-<h1> Overview of Our Method </h1>
+<h1> Chaos-Driven </h1>
 <center>
 
----
+--- -->
 
 ![bg center](img/1.jpg)
 
@@ -191,7 +181,7 @@ $$
 
 --- 
 
-<!-- header: Main Idea of the Project -->
+<!-- header: Chaos-Driven Variation Method with Rhythm Expansion -->
 
 $$ 
 {\small
@@ -207,7 +197,7 @@ $$
 {\small
 \begin{aligned}
 \{p_k\}_{k=0}^{4} &= \{C4, C4, G4, A4, F4\} \\[1em]
-&\Downarrow \text{(Augmenting the Symbolic Music Dataset)} \\[1em]
+&\Downarrow \textbf{(Expanded Symbolic Music Data)} \\[1em]
 \{p^*_k\}_{k=0}^{9} &= \{C4, C4, C4, C4, G4, G4, A4, A4, F4, F4\} \\[1em]
 \end{aligned}
 }
@@ -219,9 +209,9 @@ $$
 {\small
 \begin{aligned}
 \{p_k\}_{k=0}^{4} &= \{C4, C4, G4, A4, F4\} \\[1em]
-&\Downarrow \text{(Augmenting the Symbolic Music Dataset)} \\[1em]
+&\Downarrow \textbf{(Expanded Symbolic Music Data)} \\[1em]
 \{p^*_k\}_{k=0}^{9} &= \{C4, C4, C4, C4, G4, G4, A4, A4, F4, F4\} \\[1em]
-&\Downarrow \text{(Overview of Our Method)} \\[1em]
+&\Downarrow \text{(Chaos-Driven Variation Method)} \\[1em]
 \{p^\prime_k\}_{k=0}^{9} &= \{G4, C4, A4, G4, F4, F4, C4, C4, F4, C4\} \\[1em]
 \end{aligned}
 }
@@ -233,11 +223,11 @@ $$
 {\small
 \begin{aligned}
 \{p_k\}_{k=0}^{4} &= \{C4, C4, G4, A4, F4\} \\[1em]
-&\Downarrow \text{(Augmenting the Symbolic Music Dataset)} \\[1em]
+&\Downarrow \textbf{(Expanded Symbolic Music Data)} \\[1em]
 \{p^*_k\}_{k=0}^{9} &= \{C4, C4, C4, C4, G4, G4, A4, A4, F4, F4\} \\[1em]
-&\Downarrow \text{(Overview of Our Method)} \\[1em]
+&\Downarrow \text{(Chaos-Driven Variation Method)} \\[1em]
 \{p^\prime_k\}_{k=0}^{9} &= \{G4, C4, A4, G4, F4, F4, C4, C4, F4, C4\} \\[1em]
-&\Downarrow \text{(Construct the New Variation)} \\[1em]
+&\Downarrow \textbf{(Reduced Symbolic Music Data)} \\[1em]
 \{\dot{p}_k\}_{k=0}^{4} &= \{G4, A4, F4, C4, F4\}
 \end{aligned}
 }
@@ -246,16 +236,6 @@ $$
 ---
 
 <!-- header: Showcases -->
-
-<center>
-<br>
-<br>
-<br>
-<br>
-<h1> Showcases </h1>
-<center>
-
----
 
 <br>
 <br>
